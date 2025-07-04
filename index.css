@@ -19,11 +19,28 @@ body {
   color: white;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
 nav a {
   margin-left: 20px;
   text-decoration: none;
   color: white;
   font-weight: 500;
+}
+
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards;
 }
 
 .hero {
@@ -60,11 +77,27 @@ nav a {
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+
+  & a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.hero button:hover {
+  transform: scale(1.05);
+  background-color: #dc2626; /* tom mais forte */
 }
 
 .hero .image img {
   max-width: 100%;
   border-radius: 8px;
+  transition: transform 0.5s ease;
+}
+
+.hero .image img:hover {
+  transform: scale(1.03);
 }
 
 .sobre, .servicos, .contato {
@@ -90,6 +123,12 @@ nav a {
   border-radius: 10px;
   padding: 15px;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .card img {
@@ -154,5 +193,20 @@ form button {
 
   nav {
     margin-top: 10px;
+
+    & a {
+      transition: color 0.3s ease;
+    }
+
+    & a:hover {
+      color: #facc15; /* amarelo claro, por exemplo */
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
