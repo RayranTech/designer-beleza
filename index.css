@@ -86,11 +86,12 @@ section {
 }
 
 .hero .image img {
-  width: 100%;
-  max-width: 400px;
+  width: 90%;
+  max-width: 300px;
   height: auto;
   border-radius: 8px;
   transition: transform 0.5s ease;
+  object-fit: cover;
 }
 
 .hero .image img:hover {
