@@ -19,17 +19,6 @@ body {
   color: white;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-}
-
 nav a {
   margin-left: 20px;
   text-decoration: none;
@@ -90,8 +79,16 @@ section {
   background-color: #dc2626; /* tom mais forte */
 }
 
+.hero .image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
 .hero .image img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   border-radius: 8px;
   transition: transform 0.5s ease;
 }
