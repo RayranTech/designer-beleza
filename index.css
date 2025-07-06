@@ -177,6 +177,11 @@ h2 {
   box-shadow: 0 8px 20px rgba(197,161,85,0.15);
 }
 
+strong {
+  font-size: 12px;
+  font-weight: bold;
+}
+
 .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 16px 30px rgba(197,161,85,0.35);
