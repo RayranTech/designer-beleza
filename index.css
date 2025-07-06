@@ -29,7 +29,6 @@ body {
   color: var(--cor-texto-principal);
   line-height: 1.6;
   min-height: 100vh;
-  scroll-behavior: smooth;
 }
 
 /* Animação suave do degradê */
@@ -166,6 +165,7 @@ h2 {
   justify-items: center;
 }
 
+/* Card styling */
 .card {
   background-color: var(--cor-bege-claro);
   border-radius: 14px;
@@ -175,11 +175,6 @@ h2 {
   width: 100%;
   max-width: 260px;
   box-shadow: 0 8px 20px rgba(197,161,85,0.15);
-}
-
-strong {
-  font-size: 12px;
-  font-weight: bold;
 }
 
 .card:hover {
@@ -196,14 +191,27 @@ strong {
   box-shadow: 0 4px 10px rgba(197,161,85,0.3);
 }
 
-.card .nome {
+/* Nome do serviço como link clicável */
+.card .nome-servico {
+  display: block; /* para ocupar a linha inteira, como antes */
   margin-top: 0;
   font-weight: 700;
   color: var(--cor-cobre-rosado);
   font-size: 18px;
   margin-bottom: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  /* evita quebras inesperadas */
+  word-wrap: break-word;
+}
+.card .nome-servico:hover {
+  color: var(--cor-dourado-claro);
+  text-decoration: underline;
 }
 
+
+/* Preço do serviço */
 .card .preco {
   font-weight: 600;
   color: var(--cor-dourado-queimado);
@@ -211,6 +219,7 @@ strong {
   margin-bottom: 12px;
 }
 
+/* Descrição do serviço */
 .sobre-servico {
   margin-top: 12px;
   font-size: 14px;
@@ -287,10 +296,10 @@ form button:hover {
   }
 }
 
+/* Animação fade in */
 @keyframes fadeInUp {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
