@@ -151,9 +151,13 @@ h2 {
   transform: scale(1.04);
 }
 
-.sobre, .servicos, .contato {
+.servicos, .contato {
   text-align: center;
   color: var(--cor-texto-principal);
+}
+
+.sobre > p {
+  padding-bottom: 0.5rem;
 }
 
 .servicos .grid {
