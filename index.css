@@ -42,6 +42,11 @@ body {
   }
 }
 
+span {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
