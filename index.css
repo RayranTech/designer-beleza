@@ -1,4 +1,3 @@
-/* Variáveis de cores para facilitar manutenção */
 :root {
   --cor-branco-rosa: #FFF4F4;
   --cor-preto: #000000;
@@ -164,7 +163,24 @@ h2 {
   justify-items: center;
 }
 
-/* Card styling */
+.voltar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 1rem;
+  color: var(--cor-cobre-rosado);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.voltar:hover {
+  color: var(--cor-dourado-queimado);
+}
+
+
 .card {
   background-color: var(--cor-bege-claro);
   border-radius: 14px;
