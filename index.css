@@ -45,6 +45,7 @@ body {
 span {
   text-transform: uppercase;
   font-weight: bolder;
+  color: var(--cor-dourado-queimado);
 }
 
 .container {
@@ -57,6 +58,10 @@ span {
   font-weight: 600;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   border-radius: 0 0 12px 12px;
+
+  & h1 {
+    color: var(--cor-dourado-queimado);
+  }
 }
 
 nav a {
